@@ -16,6 +16,7 @@ class Human {
     }
 }
 
+
 class Person extends Human {
     /* ES6
     constructor(){
