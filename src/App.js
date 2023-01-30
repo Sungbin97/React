@@ -26,9 +26,14 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  }
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler} /> {/* 자식 NewExpense에서 부모 App에 데이터 전송을 위한 포인터 전달 */}
       <Expenses items={expenses}/>
     </div>
   );
